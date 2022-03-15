@@ -1,8 +1,6 @@
 package pg
 
 import (
-	"fmt"
-
 	"github.com/enix/wal-g/utility"
 
 	"github.com/enix/wal-g/pkg/databases/postgres"
@@ -88,7 +86,7 @@ var (
 				fullBackup = true
 			}
 
-			deltaBaseSelector, err := createDeltaBaseSelector(cmd, deltaFromName, deltaFromUserData)
+			deltaBaseSelector, err := CreateDeltaBaseSelector(cmd, deltaFromName, deltaFromUserData)
 			tracelog.ErrorLogger.FatalOnError(err)
 
 			userData, err := internal.UnmarshalSentinelUserData(userDataRaw)
@@ -117,11 +115,10 @@ var (
 )
 
 // create the BackupSelector for delta backup base according to the provided flags
-func createDeltaBaseSelector(cmd *cobra.Command,
+func CreateDeltaBaseSelector(cmd *cobra.Command,
 	targetBackupName, targetUserData string) (internal.BackupSelector, error) {
 	switch {
 	case targetUserData != "" && targetBackupName != "":
-		fmt.Println(cmd.UsageString())
 		return nil, errors.New("only one delta target should be specified")
 
 	case targetBackupName != "":
