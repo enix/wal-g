@@ -1,10 +1,10 @@
 package pg
 
 import (
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/pkg/databases/postgres"
 	"github.com/spf13/cobra"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/internal/databases/postgres"
 )
 
 const UseSentinelTimeFlag = "use-sentinel-time"

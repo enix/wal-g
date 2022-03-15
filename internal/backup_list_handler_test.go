@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/testtools"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/testtools"
 )
 
 type someError struct {

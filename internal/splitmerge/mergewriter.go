@@ -3,7 +3,7 @@ package splitmerge
 import (
 	"io"
 
-	"github.com/wal-g/wal-g/utility"
+	"github.com/enix/wal-g/utility"
 
 	"github.com/wal-g/tracelog"
 )

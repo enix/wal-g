@@ -1,9 +1,9 @@
 package pg
 
 import (
+	"github.com/enix/wal-g/internal/pgbackrest"
 	"github.com/spf13/cobra"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal/pgbackrest"
 )
 
 var pgbackrestBackupListCmd = &cobra.Command{

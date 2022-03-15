@@ -12,8 +12,8 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/enix/wal-g/internal/crypto"
 	"github.com/pkg/errors"
-	"github.com/wal-g/wal-g/internal/crypto"
 )
 
 const (

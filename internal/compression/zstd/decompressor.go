@@ -4,7 +4,7 @@ import (
 	"io"
 
 	"github.com/DataDog/zstd"
-	"github.com/wal-g/wal-g/internal/compression/computils"
+	"github.com/enix/wal-g/internal/compression/computils"
 )
 
 type Decompressor struct{}

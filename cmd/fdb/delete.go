@@ -1,11 +1,11 @@
 package fdb
 
 import (
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/pkg/storages/storage"
+	"github.com/enix/wal-g/utility"
 	"github.com/spf13/cobra"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
-	"github.com/wal-g/wal-g/utility"
 )
 
 var confirmed = false

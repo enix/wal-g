@@ -3,7 +3,7 @@ FROM walg-func-test-base
 
 ARG MONGO_PACKAGE=mongodb-org
 ARG MONGO_REPO=repo.mongodb.org
-ARG WALG_REPO=${GOPATH}/src/github.com/wal-g/wal-g
+ARG WALG_REPO=${GOPATH}/src/github.com/enix/wal-g
 
 ENV MONGO_PACKAGE=${MONGO_PACKAGE} MONGO_REPO=${MONGO_REPO}
 ARG MONGO_MAJOR=

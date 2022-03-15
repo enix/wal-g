@@ -8,10 +8,10 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/wal-g/wal-g/internal/splitmerge"
+	"github.com/enix/wal-g/internal/splitmerge"
 
+	"github.com/enix/wal-g/utility"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/utility"
 )
 
 const (

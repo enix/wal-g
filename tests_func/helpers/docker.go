@@ -17,8 +17,8 @@ import (
 	"github.com/docker/docker/api/types/network"
 	"github.com/docker/docker/client"
 	"github.com/docker/docker/pkg/stdcopy"
+	"github.com/enix/wal-g/tests_func/utils"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/tests_func/utils"
 )
 
 var Docker *client.Client

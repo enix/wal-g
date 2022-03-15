@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/enix/wal-g/internal"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal"
 )
 
 func TestConfigure(t *testing.T) {

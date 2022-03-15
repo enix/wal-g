@@ -1,11 +1,11 @@
 package mysql
 
 import (
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/pkg/databases/mysql"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/internal/databases/mysql"
 )
 
 const (

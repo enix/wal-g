@@ -8,11 +8,11 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/internal/crypto/openpgp"
+	"github.com/enix/wal-g/testtools"
+	"github.com/enix/wal-g/utility"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/internal/crypto/openpgp"
-	"github.com/wal-g/wal-g/testtools"
-	"github.com/wal-g/wal-g/utility"
 )
 
 const (

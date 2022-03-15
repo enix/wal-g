@@ -3,9 +3,9 @@ package pgbackrest
 import (
 	"sort"
 
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/pkg/storages/storage"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
 )
 
 type LastestBackupSelector struct {

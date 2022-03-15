@@ -7,12 +7,12 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/enix/wal-g/internal/asm"
+	"github.com/enix/wal-g/internal/compression"
+	"github.com/enix/wal-g/internal/ioextensions"
+	"github.com/enix/wal-g/pkg/storages/storage"
+	"github.com/enix/wal-g/utility"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal/asm"
-	"github.com/wal-g/wal-g/internal/compression"
-	"github.com/wal-g/wal-g/internal/ioextensions"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
-	"github.com/wal-g/wal-g/utility"
 )
 
 var ErrorSizeTrackingDisabled = fmt.Errorf("size tracking disabled by DisableSizeTracking method")

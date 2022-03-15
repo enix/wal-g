@@ -3,7 +3,7 @@ package testtools
 import (
 	"time"
 
-	"github.com/wal-g/wal-g/internal"
+	"github.com/enix/wal-g/internal"
 )
 
 const (

@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/enix/wal-g/pkg/storages/memory"
+	"github.com/enix/wal-g/pkg/storages/storage"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/pkg/storages/memory"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
 )
 
 func TestListFolderRecursively(t *testing.T) {

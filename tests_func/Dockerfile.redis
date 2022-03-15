@@ -1,7 +1,7 @@
 # vim:set ft=dockerfile:
 FROM walg-func-test-base
 
-ARG WALG_REPO=${GOPATH}/src/github.com/wal-g/wal-g
+ARG WALG_REPO=${GOPATH}/src/github.com/enix/wal-g
 ARG REDIS_VERSION=6.0.8
 ENV REDIS_DOWNLOAD_URL http://download.redis.io/releases/redis-$REDIS_VERSION.tar.gz
 

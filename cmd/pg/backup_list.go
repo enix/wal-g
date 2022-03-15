@@ -1,11 +1,11 @@
 package pg
 
 import (
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/pkg/databases/postgres"
+	"github.com/enix/wal-g/utility"
 	"github.com/spf13/cobra"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/internal/databases/postgres"
-	"github.com/wal-g/wal-g/utility"
 )
 
 const (

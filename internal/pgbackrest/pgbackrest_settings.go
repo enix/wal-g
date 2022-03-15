@@ -3,7 +3,7 @@ package pgbackrest
 import (
 	"encoding/json"
 
-	"github.com/wal-g/wal-g/pkg/storages/storage"
+	"github.com/enix/wal-g/pkg/storages/storage"
 	"gopkg.in/ini.v1"
 )
 

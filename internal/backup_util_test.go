@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/pkg/storages/memory"
+	"github.com/enix/wal-g/pkg/storages/storage"
+	"github.com/enix/wal-g/testtools"
+	"github.com/enix/wal-g/utility"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/pkg/storages/memory"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
-	"github.com/wal-g/wal-g/testtools"
-	"github.com/wal-g/wal-g/utility"
 )
 
 var (

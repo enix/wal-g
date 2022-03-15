@@ -3,9 +3,9 @@ package walparser_test
 import (
 	"testing"
 
+	"github.com/enix/wal-g/internal/walparser"
+	"github.com/enix/wal-g/testtools"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal/walparser"
-	"github.com/wal-g/wal-g/testtools"
 )
 
 func TestExtractBlockLocations(t *testing.T) {

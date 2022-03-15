@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/enix/wal-g/pkg/storages/storage"
+	"github.com/enix/wal-g/utility"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
-	"github.com/wal-g/wal-g/utility"
 )
 
 const (
@@ -31,13 +31,13 @@ const (
 	DeleteBeforeExamples = `  before base_0123              keep everything after base_0123 including itself
   before FIND_FULL base_0123    keep everything after the base of base_0123`
 
-	DeleteEverythingExamples = `  everything                
+	DeleteEverythingExamples = `  everything
 	delete every backup only if there is no permanent backups
   everything FORCE          delete every backup include permanents`
 
 	DeleteTargetExamples = `  target base_0000000100000000000000C4	delete base backup by name
   target --target-user-data "{ \"x\": [3], \"y\": 4 }"	delete backup specified by user data
-  target base_0000000100000000000000C9_D_0000000100000000000000C4	delete delta backup and all dependant delta backups 
+  target base_0000000100000000000000C9_D_0000000100000000000000C4	delete delta backup and all dependant delta backups
   target FIND_FULL base_0000000100000000000000C9_D_0000000100000000000000C4	delete delta backup and all delta backups with the same base backup`  //nolint:lll
 
 	DeleteEverythingUsageExample = "everything [FORCE]"

@@ -1,6 +1,6 @@
 package asm
 
-import "github.com/wal-g/wal-g/internal/fsutil"
+import "github.com/enix/wal-g/internal/fsutil"
 
 type DataFolderASM struct {
 	folder fsutil.DataFolder

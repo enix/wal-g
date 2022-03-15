@@ -3,14 +3,14 @@ package internal
 import (
 	"strings"
 
+	"github.com/enix/wal-g/pkg/storages/azure"
+	"github.com/enix/wal-g/pkg/storages/fs"
+	"github.com/enix/wal-g/pkg/storages/gcs"
+	"github.com/enix/wal-g/pkg/storages/s3"
+	"github.com/enix/wal-g/pkg/storages/sh"
+	"github.com/enix/wal-g/pkg/storages/storage"
+	"github.com/enix/wal-g/pkg/storages/swift"
 	"github.com/spf13/viper"
-	"github.com/wal-g/wal-g/pkg/storages/azure"
-	"github.com/wal-g/wal-g/pkg/storages/fs"
-	"github.com/wal-g/wal-g/pkg/storages/gcs"
-	"github.com/wal-g/wal-g/pkg/storages/s3"
-	"github.com/wal-g/wal-g/pkg/storages/sh"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
-	"github.com/wal-g/wal-g/pkg/storages/swift"
 )
 
 type StorageAdapter struct {

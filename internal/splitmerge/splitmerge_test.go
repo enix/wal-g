@@ -7,8 +7,8 @@ import (
 	"math/rand"
 	"testing"
 
+	"github.com/enix/wal-g/internal/abool"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal/abool"
 	"golang.org/x/sync/errgroup"
 )
 

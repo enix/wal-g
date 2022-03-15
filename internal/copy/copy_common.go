@@ -3,8 +3,8 @@ package copy
 import (
 	"sync"
 
+	"github.com/enix/wal-g/pkg/storages/storage"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
 )
 
 type InfoProvider struct {

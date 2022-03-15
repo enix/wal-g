@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/enix/wal-g/pkg/storages/storage"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
 
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore/policy"
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob"
@@ -169,7 +169,7 @@ func (folder *Folder) Exists(objectRelativePath string) (bool, error) {
 	ctx := context.Background()
 	blobClient := folder.containerClient.NewBlockBlobClient(path)
 	_, err := blobClient.GetProperties(ctx, &azblob.GetBlobPropertiesOptions{})
-	var stgErr *azblob.StorageError;
+	var stgErr *azblob.StorageError
 	if err != nil && errors.As(err, &stgErr) && stgErr.ErrorCode == azblob.StorageErrorCodeBlobNotFound {
 		return false, nil
 	}
@@ -323,12 +323,13 @@ func buildCanonicalizedResource(c *azblob.SharedKeyCredential, u *url.URL) (stri
 	}
 	return cr.String(), nil
 }
+
 // End from https://github.com/Azure/azure-sdk-for-go/blob/main/sdk/storage/azblob/zc_shared_policy_shared_key_credential.go
 
 func (folder *Folder) ReadObject(objectRelativePath string) (io.ReadCloser, error) {
 	path := storage.JoinPath(folder.path, objectRelativePath)
 	blobClient := folder.containerClient.NewBlobClient(path)
-	httpClient := &http.Client{ Timeout: folder.timeout }
+	httpClient := &http.Client{Timeout: folder.timeout}
 
 	req, err := http.NewRequest("GET", blobClient.URL(), nil)
 	if err != nil {
@@ -404,7 +405,7 @@ func (folder *Folder) DeleteObjects(objectRelativePaths []string) error {
 		blobClient := folder.containerClient.NewBlockBlobClient(path)
 		tracelog.DebugLogger.Printf("Delete %v\n", path)
 		_, err := blobClient.Delete(context.Background(), &azblob.DeleteBlobOptions{DeleteSnapshots: azblob.DeleteSnapshotsOptionTypeInclude.ToPtr()})
-		var stgErr *azblob.StorageError;
+		var stgErr *azblob.StorageError
 		if err != nil && errors.As(err, &stgErr) && stgErr.ErrorCode == azblob.StorageErrorCodeBlobNotFound {
 			continue
 		}

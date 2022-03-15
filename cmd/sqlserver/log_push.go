@@ -1,8 +1,8 @@
 package sqlserver
 
 import (
+	"github.com/enix/wal-g/pkg/databases/sqlserver"
 	"github.com/spf13/cobra"
-	"github.com/wal-g/wal-g/internal/databases/sqlserver"
 )
 
 const logPushShortDescription = "Creates new log backup and pushes it to the storage"

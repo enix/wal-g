@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"io"
 
+	"github.com/enix/wal-g/internal/walparser/parsingutil"
 	"github.com/pkg/errors"
-	"github.com/wal-g/wal-g/internal/walparser/parsingutil"
 )
 
 func readXLogRecordHeader(reader io.Reader) (*XLogRecordHeader, error) {

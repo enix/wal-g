@@ -3,8 +3,8 @@ package walparser
 import (
 	"io"
 
+	"github.com/enix/wal-g/internal/walparser/parsingutil"
 	"github.com/pkg/errors"
-	"github.com/wal-g/wal-g/internal/walparser/parsingutil"
 )
 
 type BlockLocationReader struct {

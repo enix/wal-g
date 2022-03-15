@@ -1,10 +1,10 @@
 package sqlserver
 
 import (
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/pkg/databases/sqlserver"
 	"github.com/spf13/cobra"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/internal/databases/sqlserver"
 )
 
 const proxyShortDescription = "Run local azure blob emulator"

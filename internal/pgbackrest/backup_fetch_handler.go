@@ -6,10 +6,10 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/internal/databases/postgres"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
-	"github.com/wal-g/wal-g/utility"
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/pkg/databases/postgres"
+	"github.com/enix/wal-g/pkg/storages/storage"
+	"github.com/enix/wal-g/utility"
 )
 
 func HandlePgbackrestBackupFetch(folder storage.Folder, stanza string, destinationDirectory string,

@@ -12,10 +12,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/enix/wal-g/internal/compression/lzo"
+	"github.com/enix/wal-g/internal/crypto"
+	"github.com/enix/wal-g/internal/crypto/openpgp"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal/compression/lzo"
-	"github.com/wal-g/wal-g/internal/crypto"
-	"github.com/wal-g/wal-g/internal/crypto/openpgp"
 )
 
 const (

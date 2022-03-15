@@ -5,14 +5,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/wal-g/wal-g/cmd/common"
+	"github.com/enix/wal-g/cmd/common"
 
-	"github.com/wal-g/wal-g/internal/databases/postgres"
+	"github.com/enix/wal-g/pkg/databases/postgres"
 
+	"github.com/enix/wal-g/internal"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal"
 )
 
 const WalgShortDescription = "PostgreSQL backup tool"

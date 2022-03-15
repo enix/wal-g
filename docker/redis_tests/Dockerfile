@@ -1,6 +1,6 @@
 FROM wal-g/golang:latest as build
 
-WORKDIR /go/src/github.com/wal-g/wal-g
+WORKDIR /go/src/github.com/enix/wal-g
 
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends --no-install-suggests
@@ -20,7 +20,7 @@ RUN sed -i 's|#cgo LDFLAGS: -lbrotli.*|&-static -lbrotlicommon-static -lm|' \
 
 FROM wal-g/redis:latest
 
-COPY --from=build /go/src/github.com/wal-g/wal-g/main/redis/wal-g /usr/bin
+COPY --from=build /go/src/github.com/enix/wal-g/main/redis/wal-g /usr/bin
 
 COPY docker/redis_tests/scripts/ /tmp
 

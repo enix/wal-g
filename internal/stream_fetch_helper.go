@@ -6,11 +6,11 @@ import (
 	"path"
 	"time"
 
-	"github.com/wal-g/wal-g/internal/splitmerge"
+	"github.com/enix/wal-g/internal/splitmerge"
 
+	"github.com/enix/wal-g/internal/compression"
+	"github.com/enix/wal-g/utility"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal/compression"
-	"github.com/wal-g/wal-g/utility"
 )
 
 func ParseTS(endTSEnvVar string) (endTS *time.Time, err error) {

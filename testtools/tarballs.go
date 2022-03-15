@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"sync/atomic"
 
+	"github.com/enix/wal-g/internal/crypto"
+	"github.com/enix/wal-g/utility"
 	"github.com/pierrec/lz4/v4"
-	"github.com/wal-g/wal-g/internal/crypto"
-	"github.com/wal-g/wal-g/utility"
 )
 
 // FileTarBall represents a tarball that is

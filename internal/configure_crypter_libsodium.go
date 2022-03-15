@@ -4,9 +4,9 @@
 package internal
 
 import (
+	"github.com/enix/wal-g/internal/crypto"
+	"github.com/enix/wal-g/internal/crypto/libsodium"
 	"github.com/spf13/viper"
-	"github.com/wal-g/wal-g/internal/crypto"
-	"github.com/wal-g/wal-g/internal/crypto/libsodium"
 )
 
 func configureLibsodiumCrypter() crypto.Crypter {

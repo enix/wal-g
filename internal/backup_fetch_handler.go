@@ -6,9 +6,9 @@ import (
 	"io"
 	"os/exec"
 
+	"github.com/enix/wal-g/pkg/storages/storage"
+	"github.com/enix/wal-g/utility"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
-	"github.com/wal-g/wal-g/utility"
 
 	"github.com/pkg/errors"
 )

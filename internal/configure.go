@@ -10,18 +10,18 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/wal-g/wal-g/internal/crypto/yckms"
+	"github.com/enix/wal-g/internal/crypto/yckms"
 
+	"github.com/enix/wal-g/internal/compression"
+	"github.com/enix/wal-g/internal/crypto"
+	"github.com/enix/wal-g/internal/crypto/awskms"
+	"github.com/enix/wal-g/internal/crypto/openpgp"
+	"github.com/enix/wal-g/internal/fsutil"
+	"github.com/enix/wal-g/internal/limiters"
+	"github.com/enix/wal-g/pkg/storages/storage"
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal/compression"
-	"github.com/wal-g/wal-g/internal/crypto"
-	"github.com/wal-g/wal-g/internal/crypto/awskms"
-	"github.com/wal-g/wal-g/internal/crypto/openpgp"
-	"github.com/wal-g/wal-g/internal/fsutil"
-	"github.com/wal-g/wal-g/internal/limiters"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
 	"golang.org/x/time/rate"
 )
 

@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
+	"github.com/enix/wal-g/utility"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/utility"
 )
 
 const (

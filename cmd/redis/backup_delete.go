@@ -3,12 +3,12 @@ package redis
 import (
 	"time"
 
-	"github.com/wal-g/wal-g/internal/databases/redis"
-	"github.com/wal-g/wal-g/utility"
+	"github.com/enix/wal-g/pkg/databases/redis"
+	"github.com/enix/wal-g/utility"
 
+	"github.com/enix/wal-g/internal"
 	"github.com/spf13/cobra"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal"
 )
 
 const (

@@ -6,12 +6,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/wal-g/wal-g/testtools"
+	"github.com/enix/wal-g/testtools"
 
+	"github.com/enix/wal-g/internal"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal"
 )
 
 func TestGetMaxConcurrency_InvalidKey(t *testing.T) {

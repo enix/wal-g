@@ -5,8 +5,8 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/enix/wal-g/internal/abool"
 	"github.com/pkg/errors"
-	"github.com/wal-g/wal-g/internal/abool"
 )
 
 // TarBallQueue is used to process multiple tarballs concurrently

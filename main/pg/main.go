@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/wal-g/wal-g/cmd/pg"
+	"github.com/enix/wal-g/cmd/pg"
 )
 
 func main() {

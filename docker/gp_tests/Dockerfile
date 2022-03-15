@@ -1,6 +1,6 @@
 FROM wal-g/golang:latest as build
 
-WORKDIR /go/src/github.com/wal-g/wal-g
+WORKDIR /go/src/github.com/enix/wal-g
 
 RUN apt-get update && \
     apt-get install --yes --no-install-recommends --no-install-suggests
@@ -30,7 +30,7 @@ COPY docker/pg/PGP_KEY /tmp/PGP_KEY
 COPY docker/pg/gpg.conf /home/gpadmin/.gnupg/gpg.conf
 COPY docker/pg/gpg-agent.conf /home/gpadmin/.gnupg/gpg-agent.conf
 
-COPY --from=build /go/src/github.com/wal-g/wal-g/main/gp/wal-g /usr/bin/
+COPY --from=build /go/src/github.com/enix/wal-g/main/gp/wal-g /usr/bin/
 
 COPY docker/gp_tests/scripts/ /tmp
 COPY docker/pg_tests/scripts/scripts/ /tmp/pg_scripts

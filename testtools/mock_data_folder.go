@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/wal-g/wal-g/internal/fsutil"
+	"github.com/enix/wal-g/internal/fsutil"
 )
 
 type MockDataFolder map[string]*bytes.Buffer

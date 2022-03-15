@@ -5,8 +5,8 @@ import (
 	"io"
 	"testing"
 
+	"github.com/enix/wal-g/internal/crypto"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal/crypto"
 )
 
 const (

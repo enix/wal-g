@@ -5,10 +5,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/wal-g/wal-g/cmd/common"
+	"github.com/enix/wal-g/cmd/common"
 
+	"github.com/enix/wal-g/internal"
 	"github.com/spf13/cobra"
-	"github.com/wal-g/wal-g/internal"
 )
 
 var ShortDescription = "SQLServer backup tool"

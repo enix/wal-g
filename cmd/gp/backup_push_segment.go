@@ -1,9 +1,9 @@
 package gp
 
 import (
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/pkg/databases/greenplum"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/internal/databases/greenplum"
 
 	"github.com/spf13/cobra"
 )

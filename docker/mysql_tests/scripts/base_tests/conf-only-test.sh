@@ -3,7 +3,7 @@ set -e -x
 
 . /usr/local/export_test_funcs.sh
 
-# https://github.com/wal-g/wal-g/issues/790
+# https://github.com/enix/wal-g/issues/790
 ## ensure correct conf option will overwrite this trash
 #export AWS_ENDPOINT=we23i902309239
 

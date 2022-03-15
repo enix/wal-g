@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/enix/wal-g/internal"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal"
 )
 
 type Sentinel struct {

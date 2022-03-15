@@ -7,9 +7,9 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/enix/wal-g/internal/crypto"
+	"github.com/enix/wal-g/internal/ioextensions"
 	"github.com/pkg/errors"
-	"github.com/wal-g/wal-g/internal/crypto"
-	"github.com/wal-g/wal-g/internal/ioextensions"
 	"golang.org/x/crypto/openpgp"
 )
 

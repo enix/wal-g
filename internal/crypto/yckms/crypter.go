@@ -5,10 +5,10 @@ import (
 	"context"
 	"io"
 
+	"github.com/enix/wal-g/internal/crypto"
+	"github.com/enix/wal-g/internal/ioextensions"
 	"github.com/minio/sio"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal/crypto"
-	"github.com/wal-g/wal-g/internal/ioextensions"
 	ycsdk "github.com/yandex-cloud/go-sdk"
 )
 

@@ -3,10 +3,10 @@ package internal
 import (
 	"fmt"
 
+	"github.com/enix/wal-g/pkg/storages/storage"
+	"github.com/enix/wal-g/utility"
 	"github.com/pkg/errors"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
-	"github.com/wal-g/wal-g/utility"
 )
 
 //region errors

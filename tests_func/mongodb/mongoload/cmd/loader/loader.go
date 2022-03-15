@@ -6,10 +6,10 @@ import (
 	"io"
 	"os"
 
+	"github.com/enix/wal-g/tests_func/mongodb/mongoload"
+	"github.com/enix/wal-g/tests_func/mongodb/mongoload/internal"
 	"github.com/spf13/cobra"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/tests_func/mongodb/mongoload"
-	"github.com/wal-g/wal-g/tests_func/mongodb/mongoload/internal"
 )
 
 var ammoFile string

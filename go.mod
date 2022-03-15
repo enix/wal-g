@@ -1,4 +1,4 @@
-module github.com/wal-g/wal-g
+module github.com/enix/wal-g
 
 go 1.17
 

@@ -1,8 +1,8 @@
 package mysql
 
 import (
+	db "github.com/enix/wal-g/pkg/databases/mysql"
 	"github.com/spf13/cobra"
-	db "github.com/wal-g/wal-g/internal/databases/mysql"
 )
 
 const (

@@ -6,11 +6,11 @@ import (
 	"io"
 	"sync/atomic"
 
+	"github.com/enix/wal-g/internal/crypto"
+	"github.com/enix/wal-g/internal/limiters"
+	"github.com/enix/wal-g/utility"
 	"github.com/pkg/errors"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal/crypto"
-	"github.com/wal-g/wal-g/internal/limiters"
-	"github.com/wal-g/wal-g/utility"
 )
 
 const TarPartitionFolderName = "/tar_partitions/"

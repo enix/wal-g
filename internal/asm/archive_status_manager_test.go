@@ -3,8 +3,8 @@ package asm_test
 import (
 	"testing"
 
+	"github.com/enix/wal-g/internal/asm"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal/asm"
 )
 
 type pair struct {

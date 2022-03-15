@@ -7,12 +7,12 @@ import (
 	"math/rand"
 	"testing"
 
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/internal/compression"
+	"github.com/enix/wal-g/internal/compression/lz4"
+	"github.com/enix/wal-g/testtools"
+	"github.com/enix/wal-g/utility"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/internal/compression"
-	"github.com/wal-g/wal-g/internal/compression/lz4"
-	"github.com/wal-g/wal-g/testtools"
-	"github.com/wal-g/wal-g/utility"
 )
 
 func GetLz4Compressor() compression.Compressor {

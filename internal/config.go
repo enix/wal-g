@@ -8,13 +8,13 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/enix/wal-g/internal/webserver"
+	"github.com/enix/wal-g/pkg/storages/storage"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal/webserver"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
 )
 
 const (
@@ -634,7 +634,7 @@ func CheckAllowedSettings(config *viper.Viper) {
 	// Message for the first time.
 	if foundNotAllowed {
 		tracelog.WarningLogger.Println("We found that some variables in your config file detected as 'Unknown'. \n  " +
-			"If this is not right, please create issue https://github.com/wal-g/wal-g/issues/new")
+			"If this is not right, please create issue https://github.com/enix/wal-g/issues/new")
 	}
 }
 

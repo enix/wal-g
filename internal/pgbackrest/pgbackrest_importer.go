@@ -4,9 +4,9 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/pkg/storages/storage"
 	"github.com/jackc/pgx"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
 )
 
 type BackupDetails struct {

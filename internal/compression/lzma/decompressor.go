@@ -3,8 +3,8 @@ package lzma
 import (
 	"io"
 
+	"github.com/enix/wal-g/internal/compression/computils"
 	"github.com/ulikunitz/xz/lzma"
-	"github.com/wal-g/wal-g/internal/compression/computils"
 )
 
 type Decompressor struct{}

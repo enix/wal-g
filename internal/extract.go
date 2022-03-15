@@ -9,11 +9,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/enix/wal-g/internal/compression"
+	"github.com/enix/wal-g/internal/crypto"
+	"github.com/enix/wal-g/utility"
 	"github.com/pkg/errors"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal/compression"
-	"github.com/wal-g/wal-g/internal/crypto"
-	"github.com/wal-g/wal-g/utility"
 	"golang.org/x/sync/semaphore"
 )
 

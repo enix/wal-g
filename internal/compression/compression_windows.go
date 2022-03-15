@@ -4,8 +4,8 @@
 package compression
 
 import (
-	"github.com/wal-g/wal-g/internal/compression/lz4"
-	"github.com/wal-g/wal-g/internal/compression/lzma"
+	"github.com/enix/wal-g/internal/compression/lz4"
+	"github.com/enix/wal-g/internal/compression/lzma"
 )
 
 var CompressingAlgorithms = []string{lz4.AlgorithmName, lzma.AlgorithmName}

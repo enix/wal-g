@@ -1,8 +1,8 @@
 package storagetools
 
 import (
+	"github.com/enix/wal-g/pkg/storages/storage"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
 )
 
 func HandleDeleteObject(objectPath string, folder storage.Folder) {

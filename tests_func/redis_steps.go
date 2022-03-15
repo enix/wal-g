@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/enix/wal-g/tests_func/helpers"
+	"github.com/enix/wal-g/tests_func/utils"
 	"github.com/pkg/errors"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/tests_func/helpers"
-	"github.com/wal-g/wal-g/tests_func/utils"
 )
 
 func (tctx *TestContext) isWorkingRedis(hostName string) error {

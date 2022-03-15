@@ -7,9 +7,9 @@ import (
 	"os"
 	"text/tabwriter"
 
+	"github.com/enix/wal-g/pkg/storages/storage"
 	"github.com/jedib0t/go-pretty/table"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
 )
 
 type InfoLogger interface {

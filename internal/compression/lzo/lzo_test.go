@@ -11,11 +11,11 @@ import (
 	"testing"
 
 	"github.com/cyberdelia/lzo"
+	"github.com/enix/wal-g/internal"
+	walg_lzo "github.com/enix/wal-g/internal/compression/lzo"
+	"github.com/enix/wal-g/testtools"
+	"github.com/enix/wal-g/utility"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal"
-	walg_lzo "github.com/wal-g/wal-g/internal/compression/lzo"
-	"github.com/wal-g/wal-g/testtools"
-	"github.com/wal-g/wal-g/utility"
 )
 
 // Test extraction of various lzo compressed tar files.

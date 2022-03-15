@@ -5,13 +5,13 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/wal-g/wal-g/internal/compression"
-	"github.com/wal-g/wal-g/internal/crypto"
+	"github.com/enix/wal-g/internal/compression"
+	"github.com/enix/wal-g/internal/crypto"
 
-	"github.com/wal-g/wal-g/utility"
+	"github.com/enix/wal-g/utility"
 
+	"github.com/enix/wal-g/internal"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal"
 )
 
 func HandlePutObject(localPath, dstPath string, uploader *internal.Uploader, overwrite, encrypt, compress bool) {

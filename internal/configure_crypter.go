@@ -15,9 +15,9 @@ package internal
 // If there is a tag, we can configure the correct implementation of crypter.
 
 import (
+	"github.com/enix/wal-g/internal/crypto"
 	"github.com/spf13/viper"
 	"github.com/wal-g/tracelog"
-	"github.com/wal-g/wal-g/internal/crypto"
 )
 
 func configureLibsodiumCrypter() crypto.Crypter {

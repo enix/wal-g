@@ -3,7 +3,7 @@ package testtools
 import (
 	"bytes"
 
-	"github.com/wal-g/wal-g/internal"
+	"github.com/enix/wal-g/internal"
 )
 
 // FileTarBallMaker creates a new FileTarBall

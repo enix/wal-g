@@ -11,8 +11,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/s3/s3iface"
+	"github.com/enix/wal-g/pkg/storages/storage"
 	"github.com/pkg/errors"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
 )
 
 const (

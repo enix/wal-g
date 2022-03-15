@@ -12,19 +12,19 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wal-g/wal-g/internal/databases/postgres"
+	"github.com/enix/wal-g/pkg/databases/postgres"
 
 	"github.com/aws/aws-sdk-go/service/s3/s3manager/s3manageriface"
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/internal/fsutil"
+	"github.com/enix/wal-g/internal/walparser"
+	"github.com/enix/wal-g/pkg/storages/memory"
+	"github.com/enix/wal-g/pkg/storages/s3"
+	"github.com/enix/wal-g/pkg/storages/storage"
+	"github.com/enix/wal-g/test/mocks"
+	"github.com/enix/wal-g/utility"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/internal/fsutil"
-	"github.com/wal-g/wal-g/internal/walparser"
-	"github.com/wal-g/wal-g/pkg/storages/memory"
-	"github.com/wal-g/wal-g/pkg/storages/s3"
-	"github.com/wal-g/wal-g/pkg/storages/storage"
-	"github.com/wal-g/wal-g/test/mocks"
-	"github.com/wal-g/wal-g/utility"
 )
 
 type DataFilling int

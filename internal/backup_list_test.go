@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wal-g/wal-g/utility"
+	"github.com/enix/wal-g/utility"
 
+	"github.com/enix/wal-g/internal"
+	"github.com/enix/wal-g/testtools"
 	"github.com/stretchr/testify/assert"
-	"github.com/wal-g/wal-g/internal"
-	"github.com/wal-g/wal-g/testtools"
 )
 
 func TestBackupListFindsBackups(t *testing.T) {
